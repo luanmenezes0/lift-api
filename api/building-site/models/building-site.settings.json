@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "building_sites",
+  "info": {
+    "name": "buildingSite",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "district": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "ativo",
+        "inativo"
+      ],
+      "required": true,
+      "default": "ativo"
+    }
+  }
+}
